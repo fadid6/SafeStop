@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Safe Spot Database</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery.min.js"></script>
+        <script src="color.js"></script>
+        <script src="velocity.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script>
+            var config = {
+                apiKey: "AIzaSyBLJYHPq1ZFD3fbuTMpYltF3geXYpK4fxk",
+                authDomain: "safe-stop-7849c.firebaseapp.com",
+                databaseURL: "https://safe-stop-7849c.firebaseio.com",
+                projectId: "safe-stop-7849c",
+                storageBucket: "safe-stop-7849c.appspot.com",
+                messagingSenderId: "48358257392"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="script2.js"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <p id = "title">Client #1178</p>
+        </div>
+        <div class = "button" id = "b1">
+            <p class = "mes">You're all good, drive safe!</p>
+        </div>
+        <div class = "button" id = "b2">
+            <p class = "mes">I'm coming up to the window, please keep your hands on the wheel.</p>
+        </div>
+        <div class = "button" id = "b3">
+            <p class = "mes">I'm going to be sending a speeding ticket, you may drive off.</p>
+        </div>
+        <div class = "button" id = "b4">
+            <p class = "mes">You have a broken tail light, get it fixed.</p>
+        </div>
+        <div class = "button" id = "b5">
+            <p class = "mes">Your tags are expired.</p>
+        </div>
+    </body>
+</html>

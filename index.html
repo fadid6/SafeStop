@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Safe Spot Database</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery.min.js"></script>
+        <script src="color.js"></script>
+        <script src="velocity.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script>
+            var config = {
+                apiKey: "AIzaSyBLJYHPq1ZFD3fbuTMpYltF3geXYpK4fxk",
+                authDomain: "safe-stop-7849c.firebaseapp.com",
+                databaseURL: "https://safe-stop-7849c.firebaseio.com",
+                projectId: "safe-stop-7849c",
+                storageBucket: "safe-stop-7849c.appspot.com",
+                messagingSenderId: "48358257392"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id = "header">
+            <p id = "title">Create a New User</p>
+        </div>
+        <br>
+        First name:<br>
+        <input type="text" name="firstname" value="Cody">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Bolling">
+        <br>
+        Date of Birth:<br>
+        <input type="text" name="lastname" value="4-27-1998">
+        <br>
+        License #:<br>
+        <input type="text" name="lastname" value="12345678">
+        <br><br>
+        <a href="createdPage.html"><input type="submit" value="Submit"></a>
+    </body>
+</html>
